@@ -48,8 +48,8 @@ namespace CH8
                 "Chip 8",
                 SDL.SDL_WINDOWPOS_CENTERED,
                 SDL.SDL_WINDOWPOS_CENTERED,
-                1020,
-                800,
+                640,
+                320,
                 SDL.SDL_WindowFlags.SDL_WINDOW_RESIZABLE);
 
             renderer = SDL.SDL_CreateRenderer(
@@ -84,9 +84,9 @@ namespace CH8
             Chip8 chip8 = new Chip8();
 
             chip8.init();
-            // DONE // chip8.loadRom(Environment.CurrentDirectory + "\\chip8-test-rom.c8");
+            //chip8.loadRom(Environment.CurrentDirectory + "\\chip8-test-rom.c8");
             //chip8.loadRom(Environment.CurrentDirectory + "\\test_opcode.c8");
-            chip8.loadRom(Environment.CurrentDirectory + "\\tetris.c8");
+            //chip8.loadRom(Environment.CurrentDirectory + "\\tetris.c8");
             //chip8.loadRom(Environment.CurrentDirectory + "\\pong2.c8");
             //chip8.loadRom(Environment.CurrentDirectory + "\\invaders.c8");
 
